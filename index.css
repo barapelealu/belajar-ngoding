@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #594ce9;
+  --background-color: #f5f5f5;
+  --card-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional but recommended for consistent box model */
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 24px 100px;
+}
+
+li {
+  padding: 8px 16px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--primary-color);
+}
+.nav-items li:hover {
+  background-color: #dedbfb;
+  padding: 8px 16px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+body,
+p,
+li,
+a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 100px;
+}
+
+.CTA-Button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: #f9fafb;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+}
+
+button.CTA-Button:hover {
+  background-color: #4a3fc2;
+}
+
+em {
+  color: var(--primary-color);
+  font-style: normal;
+}
+
+.hero-card {
+  display: flex;
+  padding: 42px 110px;
+  gap: 120px;
+  width: 100%;
+  justify-content: center;
+}
+
+.img-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-container p {
+  min-width: max-content;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 60px 100px;
+  gap: 24px;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.case-study-list {
+  gap: 24px;
+}
+
+.card-work {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: var(--card-color);
+  padding: 16px 16px;
+  border-radius: 24px;
+}
+
+.img-card {
+  width: 472px;
+  height: 260px;
+  border-radius: 14px;
+}
