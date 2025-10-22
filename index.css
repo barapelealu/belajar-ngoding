@@ -130,6 +130,8 @@ p {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .work-section {
@@ -174,6 +176,7 @@ p {
   flex-direction: row;
   gap: 10px;
   max-width: fit-content;
+  padding: 8px 0px;
 }
 
 .card-label-container {
@@ -184,5 +187,18 @@ p {
 
 .card-label {
   font-size: 14px;
+  color: var(--card-color);
   max-width: fit-content;
+}
+
+.intro-section {
+  background-color: #594ce9;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 24px 100px;
+}
+
+.page-title-secondary {
+  color: var(--background-color);
 }
