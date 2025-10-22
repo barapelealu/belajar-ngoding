@@ -2,6 +2,7 @@
   --primary-color: #594ce9;
   --background-color: #f5f5f5;
   --card-color: #ffffff;
+  --text-color: #202020;
 }
 * {
   margin: 0;
@@ -52,12 +53,13 @@ li {
 body,
 p,
 li,
-a {
+h4 a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  color: var(--text-color);
 }
 
 .hero-section {
@@ -115,8 +117,19 @@ em {
   border-radius: 0px;
 }
 
+h4 {
+  font-size: 28px;
+}
+
 p {
-  font-size: 22px;
+  font-size: 18px;
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .work-section {
@@ -132,6 +145,9 @@ p {
   font-weight: 400;
 }
 .case-study-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -142,10 +158,31 @@ p {
   background-color: var(--card-color);
   padding: 16px 16px;
   border-radius: 24px;
+  gap: 10px;
+  height: fit-content;
 }
 
 .img-card {
-  width: 472px;
-  height: 260px;
+  width: 100%;
+  height: auto;
   border-radius: 14px;
+}
+
+.label-work {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+.card-label-container {
+  max-width: fit-content;
+  background-color: #8ea0e3;
+  border-radius: 999px;
+}
+
+.card-label {
+  font-size: 14px;
+  max-width: fit-content;
 }
