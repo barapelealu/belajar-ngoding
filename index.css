@@ -304,6 +304,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .img-container {
+    padding: 8px;
+    width: fit-content;
+  }
   .nav-items {
     display: none;
     align-items: center;
@@ -327,7 +331,7 @@ p {
     font-size: 26px;
   }
   .hero-card {
-    gap: 60px;
+    gap: 32px;
     padding: 21px 55px;
   }
   .img-text {
